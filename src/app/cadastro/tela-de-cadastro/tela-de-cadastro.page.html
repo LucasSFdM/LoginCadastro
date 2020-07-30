@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="corpadron">
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button routerLink="/tabs" expand="start" color="corpadron">←Voltar</ion-button>
+
+  <ion-card>
+    <ion-item color="corpadron">
+      <ion-label position="stacked">Nome:</ion-label>
+      <ion-input placeholder="Digite seu nome" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="corpadron">
+      <ion-label position="stacked">CPF:</ion-label>
+      <ion-input placeholder="Digite seu CPF" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item color="corpadron">
+      <ion-label position="stacked">Data de nascimento:</ion-label>
+      <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc"></ion-datetime>
+    </ion-item>
+
+    <ion-item color="corpadron">
+      <ion-radio-group>
+        <ion-label>Gênero</ion-label>
+        <ion-item color="corpadron">
+          <ion-label>Masculino</ion-label>
+          <ion-radio slot="start" value="biff"></ion-radio>
+        </ion-item>
+
+        <ion-item color="corpadron">
+          <ion-label>Feminino</ion-label>
+          <ion-radio slot="start" value="griff"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item>
+
+    <ion-item color="corpadron">
+      <ion-label position="stacked">Telefone:</ion-label>
+      <ion-input placeholder="Digite seu número de telefone" type="number"></ion-input>
+    </ion-item>
+
+    <ion-item color="corpadron">
+      <ion-label position="stacked">Email:</ion-label>
+      <ion-input placeholder="Digite um email" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="corpadron">
+      <ion-label position="stacked">Senha:</ion-label>
+      <ion-input placeholder="Digite uma senha" type="password"></ion-input>
+    </ion-item>
+
+    <ion-item color="corpadron">
+      <ion-label position="stacked">Repita a Senha:</ion-label>
+      <ion-input placeholder="Repita a senha" type="password"></ion-input>
+    </ion-item>
+
+    <ion-item color="corpadron">
+      <ion-grid>
+        <ion-row>
+          <ion-col routerLink="/tela-de-cadastro">
+            <ion-button expand="block" color="danger">Cadastrar</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+  </ion-card>
+</ion-content>
